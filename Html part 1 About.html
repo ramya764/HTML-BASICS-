@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Column Layout</title>
+    <style>
+        *{
+            font-family:cursive;    
+            color:black;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        header, button{
+            background-color: #13b819;
+            padding: 1px;
+        }
+        button{
+            position:fixed;
+            top:20px;
+            right:20px;
+        }
+        nav {
+            background-color: #4a4848;
+            padding: 5px;
+        }
+        .col{
+            background-color: #4a4848; 
+            padding: 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        #imp{
+            font-weight:bold;
+        }
+        a{
+            padding:219px;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+    <p>
+        <h1>Foundations of Computational Science: DBMS, Python and DSA</h1>
+        <button>Log In</button></p>
+    </header>
+    <nav>
+        <p>
+        <a href="https://www.tutorialspoint.com/dbms/index.htm">DBMS</a>||
+        <a href="https://www.learnpython.org/">Python</a>||
+        <a href="https://www.w3schools.com/dsa/index.php">DSA</a>
+        </p>
+    </nav>
+    <p>Understanding DSA is crucial for software development as they provide efficient ways to organize and process data, enabling the creation of faster and more scalable applications. Python, known for its readability and versatility, is widely used for its ease of learning and application in diverse domains, making it a valuable language for aspiring programmers. DBMS are essential in handling data effectively, a skill vital for developing applications that require organized and accessible information, such as in business, healthcare, and various other industries. Learning these concepts empowers developers to build robust, efficient, and data-centric software solutions.</p>
+    <div class="container">
+        <div class="col">
+            <h2>Database Management System</h2>
+            <p><span id="imp">Definition: </span> A software system that manages and organizes data in databases.</p>
+            <p><span id="imp">Components: </span> Typically consists of a database engine, query processor and storage management.</p>
+            <p><span id="imp">Types: </span>Relational (e.g., MySQL, PostgreSQL), NoSQL (e.g., MongoDB) and Object-Oriented.</p>
+            <p><span id="imp">ACID Properties: </span>Ensures data consistency, integrity and reliability.</p>
+            <p><span id="imp">Applications</span></p>
+            <ul>
+                <li>Storage and Retrieval</li>
+                <li>Business</li>
+                <li>Healthcare</li>
+                <li>Education</li>
+                <li>E-commerce</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h2>Python Programming Language</h2>
+            <p><span id="imp">Definition: </span>Python is a high-level, interpreted programming language known for its simplicity and readability.</p>
+            <p><span id="imp">Versatility: </span>Supports both object-oriented and procedural programming paradigms.</p>
+            <p><span id="imp">Interpreted: </span>Python code is executed line by line, promoting ease of debugging.</p>
+            <p><span id="imp">Libraries: </span>Rich standard library and third-party packages enhance functionality.</p>
+            <p><span id="imp">Applications</span></p>
+            <ul>
+                <li>Easy-to-read and concise syntax</li>
+                <li>Web Development</li>
+                <li>Data Science</li>
+                <li>System Administration</li>
+                <li>Automation</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h2>Data Structures and Algorithms</h2>
+            <p><span id="imp">Definition: </span>DSA involves the study of organizing and processing data efficiently using structures and algorithms.</p>
+            <p><span id="imp">Importance: </span>Crucial for developing efficient and scalable software solutions.</p>
+            <p><span id="imp">Efficiency: </span>DSA focuses on optimizing resource usage such as time and space.</p>
+            <p><span id="imp">Algorithm Complexity: </span>Analyzing time and space complexity to evaluate efficiency.</p>
+            <p><span id="imp">Applications</span></p>
+            <ul>
+                <li>Searching and Sorting</li>
+                <li>Hashing</li>
+                <li>Dynamic Programming</li>
+                <li>Cryptography</li>
+                <li>Game Development</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
